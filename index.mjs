@@ -5,3 +5,11 @@ export function greet(name) {
   }
   return `Hello, ${trimmedName}!`;
 }
+
+export function farewell(name) {
+  const trimmedName = name.trim();
+  if (trimmedName === '') {
+    return 'Goodbye, friend!';
+  }
+  return `Goodbye, ${trimmedName}!`;
+}
